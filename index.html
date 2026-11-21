@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SPINE by O2: preview</title>
+<meta name="description" content="SPINE by O2: one app that runs a whole business. Hotel PMS, channel manager and booking page, restaurant POS, customers and LINE, clinic and website, on one shared record.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg: #f3f7f7; --panel: #ffffff; --ink: #0f2a30; --muted: #5a7177; --line: #dbe6e7; --accent: #0f6e77; --soft: #e3f0f1; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #071417; --panel: #0e2227; --ink: #e6f1f2; --muted: #93abb0; --line: #1e3a40; --accent: #5fc3cb; --soft: #12313a; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 Inter, system-ui, sans-serif; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+  header { padding: 72px 0 40px; }
+  .kicker { font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); }
+  h1 { font-size: clamp(40px, 7vw, 72px); line-height: 1.02; margin: 10px 0 14px; letter-spacing: -.02em; }
+  .lead { font-size: clamp(18px, 2.2vw, 21px); color: var(--muted); max-width: 760px; margin: 0; }
+  .note { display: inline-block; margin-top: 18px; padding: 6px 12px; border-radius: 999px; background: var(--soft); color: var(--ink); font-size: 13px; }
+  h2 { font-size: clamp(26px, 3.4vw, 34px); margin: 64px 0 8px; letter-spacing: -.01em; }
+  .sub { color: var(--muted); margin: 0 0 24px; max-width: 760px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 16px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 18px; padding: 20px 22px; }
+  .card h3 { margin: 0 0 6px; font-size: 18px; }
+  .card p { margin: 0; color: var(--muted); font-size: 15px; }
+  .tag { font-size: 11.5px; font-weight: 600; color: var(--accent); text-transform: uppercase; letter-spacing: .08em; }
+  .flows { counter-reset: f; list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+  .flows li { counter-increment: f; background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 14px 18px 14px 56px; position: relative; }
+  .flows li::before { content: counter(f); position: absolute; left: 16px; top: 13px; width: 26px; height: 26px; border-radius: 50%; background: var(--soft); color: var(--accent); font-weight: 700; font-size: 13px; display: grid; place-items: center; }
+  .flows b { display: block; }
+  figure { margin: 0; background: var(--panel); border: 1px solid var(--line); border-radius: 18px; overflow: hidden; }
+  figure img { display: block; width: 100%; height: auto; }
+  figcaption { padding: 14px 18px; font-size: 15px; color: var(--muted); }
+  figcaption b { color: var(--ink); }
+  .shots { display: grid; gap: 20px; }
+  .pair { display: grid; grid-template-columns: 2fr 1fr; gap: 20px; align-items: start; }
+  @media (max-width: 760px) { .pair { grid-template-columns: 1fr; } header { padding-top: 48px; } }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; }
+  .stat { background: var(--panel); border: 1px solid var(--line); border-radius: 16px; padding: 16px 18px; }
+  .stat b { display: block; font-size: 30px; line-height: 1.1; }
+  .stat span { color: var(--muted); font-size: 14px; }
+  footer { margin-top: 72px; padding: 28px 0 40px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+  footer a { color: var(--accent); text-decoration: none; font-weight: 600; letter-spacing: .08em; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">Preview · November 2026</div>
+    <h1>SPINE by O2</h1>
+    <p class="lead">One app that runs a whole business. Every O2 product lives inside it, shares one record of guests, rooms, prices and money, and works as one system. An owner with several businesses sees them all from one sign-in.</p>
+    <span class="note">Every screen here shows the Riverside Demo Resort: a made-up hotel with made-up guests.</span>
+  </header>
+
+  <h2>The systems</h2>
+  <p class="sub">Each business switches on the systems it uses. The O2 mark at the top left opens them; Home comes first.</p>
+  <div class="grid">
+    <div class="card"><span class="tag">Start here</span><h3>Home</h3><p>What needs someone now, from every system and urgent first, then one card per system: the hotel today, guests on LINE, restaurant sales, new bookings.</p></div>
+    <div class="card"><span class="tag">Working</span><h3>Hotel (PMS)</h3><p>Bookings and the room chart, check-in and check-out, rooms by building, housekeeping, repairs, guest bills, payments, cash drawers, the night audit, rates, reports.</p></div>
+    <div class="card"><span class="tag">Working</span><h3>Channel manager and booking page</h3><p>Booking sites and price parity, packages and promotion codes, and the hotel's own booking page with a price calendar and three ways to pay.</p></div>
+    <div class="card"><span class="tag">Working</span><h3>Restaurant (POS)</h3><p>A till for the restaurant, bar or spa: tables, menus with choices, a kitchen screen, discounts, split and merge, bills charged to the guest's room.</p></div>
+    <div class="card"><span class="tag">Working</span><h3>Customers (CRM)</h3><p>LINE chats with the hotel's Official Account, guest requests sorted in Thai and English, and one profile per customer.</p></div>
+    <div class="card"><span class="tag">New</span><h3>Clinic and Website</h3><p>Appointments, treatments and the visit log for clinics; and each client's website, editing its content and taking bookings from SPINE.</p></div>
+  </div>
+
+  <h2>One record, connected</h2>
+  <p class="sub">The systems are views on one shared record per company, so a change in one is seen at once in the others.</p>
+  <ol class="flows">
+    <li><b>Website booking to the hotel</b>A guest books online; the room comes off the same rooms the desk and the booking sites sell, and the booking lands in the PMS.</li>
+    <li><b>LINE to housekeeping</b>"Please bring more towels" from a guest in room 101 becomes a housekeeping task for room 101.</li>
+    <li><b>Restaurant to the room bill</b>Dinner charged to the room joins the guest's bill and is paid at check-out with everything else.</li>
+    <li><b>Bank to booking</b>A guest pays by transfer; staff press "Transfer received", the booking is confirmed and Home stops asking.</li>
+    <li><b>One guest everywhere</b>Stays, chats, restaurant spend and preferences sit on one profile.</li>
+  </ol>
+
+  <h2>Screens</h2>
+  <p class="sub">Taken from the running app on 22 November 2026, in the Glass light look. SPINE also has Glass dark, Light and Dark, in English and Thai.</p>
+  <div class="shots">
+    <div class="pair">
+      <figure><img src="img/home.jpg" alt="SPINE Home: what needs someone now, then a card per system" loading="lazy"><figcaption><b>Home.</b> What needs someone now, urgent first, from every system; then the hotel, LINE, the restaurant and new bookings.</figcaption></figure>
+      <figure><img src="img/phone-home.jpg" alt="SPINE Home on a phone" loading="lazy"><figcaption><b>On a phone.</b> The same Home, with the systems along the bottom.</figcaption></figure>
+    </div>
+    <figure><img src="img/systems-menu.jpg" alt="The systems menu opened from the O2 mark" loading="lazy"><figcaption><b>The systems menu.</b> One tap on the O2 mark switches between Home and each system.</figcaption></figure>
+    <figure><img src="img/room-chart.jpg" alt="The room chart" loading="lazy"><figcaption><b>Room chart.</b> Every room and stay, scrolling sideways four months, with a date picker and status filters.</figcaption></figure>
+    <figure><img src="img/booking-page.jpg" alt="The hotel's own booking page" loading="lazy"><figcaption><b>Booking page.</b> The hotel's own direct booking: a price for every date, a best-price card, rooms, rates and promotion codes.</figcaption></figure>
+    <figure><img src="img/rooms.jpg" alt="Rooms by building with housekeeping status" loading="lazy"><figcaption><b>Rooms.</b> Rooms by building, with housekeeping and repair status.</figcaption></figure>
+    <figure><img src="img/till.jpg" alt="The restaurant till" loading="lazy"><figcaption><b>Restaurant till.</b> Tables, menus and bills, charged to a room or paid on the spot.</figcaption></figure>
+    <figure><img src="img/crm.jpg" alt="LINE chats in the customer system" loading="lazy"><figcaption><b>LINE chats.</b> Guest messages in one inbox, linked to their stay, sorted into requests.</figcaption></figure>
+  </div>
+
+  <h2>Where it stands</h2>
+  <div class="stats">
+    <div class="stat"><b>6</b><span>systems, plus Home</span></div>
+    <div class="stat"><b>220</b><span>automated tests, all passing</span></div>
+    <div class="stat"><b>7</b><span>staff roles, 42 permissions</span></div>
+    <div class="stat"><b>2</b><span>languages: English and Thai</span></div>
+  </div>
+
+  <footer>
+    <div>SPINE by O2 · a preview for the O2 team. No client data is shown on this page.</div>
+    <div style="margin-top:10px"><a href="https://o2-designstudio.com" rel="noopener">O2 · DESIGN STUDIO</a></div>
+  </footer>
+</div>
+</body>
+</html>
